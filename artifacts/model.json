@@ -1,0 +1,222 @@
+{
+  "format": "daily-project-prototype-v1",
+  "project": "rag-evaluation",
+  "title": "RAG Evaluation Lab",
+  "domain": "ai-evaluation",
+  "mode": "classifier",
+  "labels": [
+    "retrieval-miss",
+    "unsupported-answer",
+    "citation-gap",
+    "abstention-error"
+  ],
+  "prototypes": {
+    "retrieval-miss": {
+      "the": 15,
+      "expected": 3,
+      "document": 3,
+      "never": 3,
+      "appeared": 3,
+      "in": 5,
+      "top": 3,
+      "results": 3,
+      "relevant": 6,
+      "evidence": 3,
+      "was": 3,
+      "absent": 3,
+      "from": 3,
+      "retrieved": 3,
+      "context": 3,
+      "an": 4,
+      "operations": 2,
+      "review": 2,
+      "for": 2,
+      "evaluation": 2,
+      "case": 2,
+      "ranking": 3,
+      "placed": 3,
+      "irrelevant": 3,
+      "policy": 3,
+      "above": 3,
+      "correct": 3,
+      "section": 3,
+      "item": 3,
+      "fell": 3,
+      "outside": 3,
+      "accepted": 3,
+      "retrieval": 3,
+      "window": 3
+    },
+    "unsupported-answer": {
+      "in": 4,
+      "an": 4,
+      "operations": 2,
+      "review": 2,
+      "the": 6,
+      "response": 4,
+      "makes": 2,
+      "a": 4,
+      "claim": 4,
+      "not": 2,
+      "present": 2,
+      "any": 2,
+      "source": 2,
+      "answer": 2,
+      "faithfulness": 2,
+      "failed": 2,
+      "despite": 2,
+      "available": 2,
+      "context": 2,
+      "for": 2,
+      "evaluation": 2,
+      "case": 2,
+      "invented": 2,
+      "product": 2,
+      "limit": 2,
+      "generated": 2,
+      "cannot": 2,
+      "be": 2,
+      "traced": 2,
+      "to": 2,
+      "retrieved": 2,
+      "evidence": 2
+    },
+    "citation-gap": {
+      "the": 2,
+      "answer": 4,
+      "is": 2,
+      "correct": 2,
+      "but": 2,
+      "has": 2,
+      "no": 2,
+      "source": 2,
+      "reference": 2,
+      "citation": 2,
+      "coverage": 2,
+      "failed": 2,
+      "for": 3,
+      "an": 3,
+      "otherwise": 2,
+      "supported": 2,
+      "evaluation": 1,
+      "case": 1
+    },
+    "abstention-error": {
+      "the": 4,
+      "system": 2,
+      "answered": 2,
+      "even": 2,
+      "though": 2,
+      "evidence": 2,
+      "was": 2,
+      "insufficient": 2,
+      "answer": 2,
+      "policy": 2,
+      "should": 2,
+      "have": 2,
+      "triggered": 2,
+      "abstention": 2,
+      "in": 1,
+      "an": 1,
+      "operations": 1,
+      "review": 1
+    }
+  },
+  "idf": {
+    "relevant": 1.847298,
+    "evidence": 1.847298,
+    "was": 2.252763,
+    "absent": 2.252763,
+    "from": 2.252763,
+    "retrieved": 1.847298,
+    "context": 1.847298,
+    "answer": 1.559616,
+    "faithfulness": 2.252763,
+    "failed": 1.847298,
+    "despite": 2.252763,
+    "available": 2.252763,
+    "citation": 2.252763,
+    "coverage": 2.252763,
+    "for": 2.252763,
+    "an": 2.252763,
+    "otherwise": 2.252763,
+    "supported": 2.252763,
+    "the": 1.559616,
+    "policy": 2.252763,
+    "should": 2.252763,
+    "have": 2.252763,
+    "triggered": 2.252763,
+    "abstention": 2.252763,
+    "item": 2.252763,
+    "fell": 2.252763,
+    "outside": 2.252763,
+    "accepted": 2.252763,
+    "retrieval": 2.252763,
+    "window": 2.252763,
+    "generated": 2.252763,
+    "claim": 2.252763,
+    "cannot": 2.252763,
+    "be": 2.252763,
+    "traced": 2.252763,
+    "to": 2.252763
+  },
+  "documents": [
+    {
+      "id": "eval-01",
+      "label": "retrieval-miss",
+      "text": "Relevant evidence was absent from retrieved context.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "ai-evaluation"
+      }
+    },
+    {
+      "id": "eval-02",
+      "label": "unsupported-answer",
+      "text": "Answer faithfulness failed despite available context.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "ai-evaluation"
+      }
+    },
+    {
+      "id": "eval-03",
+      "label": "citation-gap",
+      "text": "Citation coverage failed for an otherwise supported answer.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "ai-evaluation"
+      }
+    },
+    {
+      "id": "eval-04",
+      "label": "abstention-error",
+      "text": "The answer policy should have triggered abstention.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "ai-evaluation"
+      }
+    },
+    {
+      "id": "eval-05",
+      "label": "retrieval-miss",
+      "text": "The relevant item fell outside the accepted retrieval window.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "ai-evaluation"
+      }
+    },
+    {
+      "id": "eval-06",
+      "label": "unsupported-answer",
+      "text": "The generated claim cannot be traced to retrieved evidence.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "ai-evaluation"
+      }
+    }
+  ],
+  "graph_edges": [],
+  "confidence_threshold": 0.18,
+  "trained_on_synthetic_data": true
+}

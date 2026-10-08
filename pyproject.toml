@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-evaluation-lab-20261008"
+version = "0.1.0"
+description = "A reproducible RAG evaluation harness for retrieval misses, unsupported answers, citation gaps, and abstention errors."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "R-behera" }]
+dependencies = []
+
+[project.scripts]
+rag-evaluation-lab-20261008 = "rag_evaluation.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,52 @@
+{
+  "name": "RAG Evaluation Lab",
+  "problem": "RAG systems often ship without a stable regression set or failure taxonomy.",
+  "domain": "ai-evaluation",
+  "architecture": "classifier",
+  "hugging_face_tasks": [
+    "text-classification",
+    "question-answering",
+    "text-ranking",
+    "summarization"
+  ],
+  "recommended_stack": [
+    "FastAPI for evaluation jobs and reports",
+    "Ragas-style retrieval and faithfulness metrics",
+    "MLflow for experiment and artifact tracking",
+    "PostgreSQL for versioned evaluation cases",
+    "OpenTelemetry plus Phoenix for trace inspection",
+    "GitHub Actions for threshold-based release gates"
+  ],
+  "real_world_data_sources": [
+    {
+      "name": "GitHub REST API",
+      "url": "https://api.github.com/repos/huggingface/transformers/issues?state=open&per_page=5",
+      "purpose": "Real technical questions for evaluation-set construction"
+    },
+    {
+      "name": "arXiv API",
+      "url": "https://export.arxiv.org/api/query?search_query=all:retrieval%20augmented%20generation&start=0&max_results=5",
+      "purpose": "Public RAG literature for grounded-answer cases"
+    }
+  ],
+  "job_description_skills": [
+    "LLM and RAG evaluation design",
+    "Golden datasets and failure taxonomies",
+    "Experiment tracking and model release gates",
+    "Trace-level diagnosis and prompt regression testing",
+    "Statistical comparison of AI system versions"
+  ],
+  "impact_targets": [
+    "Detect 100% of seeded unsupported-answer regressions",
+    "Track retrieval, faithfulness, citation, latency, and cost metrics",
+    "Fail CI when any critical metric drops beyond tolerance",
+    "Produce comparable evaluation reports for every model version"
+  ],
+  "baseline_evaluation": {
+    "test_examples": 4,
+    "accuracy": 0.75,
+    "synthetic_evaluation": true
+  },
+  "estimated_delivery": "8-12 weeks for one engineer",
+  "generated_baseline_is_production_ready": false
+}
